@@ -1,0 +1,45 @@
+[serve.static]
+plugins = ["bun-plugin-tailwind"]
+
+[fmt]
+printWidth = 100
+semi = true
+singleQuote = false
+useTabs = true
+sortPackageJson = true
+sortTailwindcss = true
+
+[fmt.jsdoc]
+capitalizeDescriptions = true
+descriptionWithDot = true
+bracketSpacing = true
+preferCodeFences = true
+
+[fmt.svelte]
+sortOrder = "options-scripts-markup-styles"
+allowShorthand = true
+indentScriptAndStyle = false
+
+[fmt.sortImports]
+newlinesBetween = false
+
+[lint]
+typeAware = true
+
+[lint.categories]
+correctness = "error"
+suspicious = "warn"
+perf = "warn"
+
+[lint.rules]
+"prefer-const" = "error"
+"eqeqeq" = ["error", "smart"]
+"@typescript-eslint/no-explicit-any" = "error"
+"@typescript-eslint/no-floating-promises" = "error"
+"no-console" = "warn"
+"no-debugger" = "error"
+"no-restricted-imports" = ["error", { patterns = ["@/lib", "@/lib/*", "./lib", "./lib/*"] }]
+"@typescript-eslint/no-unused-vars" = [
+	"warn",
+	{ argsIgnorePattern = "^_", varsIgnorePattern = "^_", caughtErrorsIgnorePattern = "^_" },
+]
