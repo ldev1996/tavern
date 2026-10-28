@@ -1,6 +1,6 @@
 <script>
 import "./app.css";
-import Button from "./lib/components/ui/button/button.svelte";
+import Button from "@/lib/components/ui/button";
 
 let count = $state(0);
 </script>
