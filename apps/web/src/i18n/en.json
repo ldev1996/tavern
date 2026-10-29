@@ -1,0 +1,5 @@
+{
+	"count.is.{count}": "Count is {count}.",
+	"count.increment": "Increment",
+	"count.decrement": "Decrement"
+}
