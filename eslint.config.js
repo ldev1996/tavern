@@ -4,7 +4,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default defineConfig(
-	{ ignores: ["dist/**", "node_modules/**"] },
+	{ ignores: ["**/dist/**", "**/node_modules/**"] },
 	...tseslint.configs.recommended,
 	...svelte.configs["flat/recommended"],
 	{
