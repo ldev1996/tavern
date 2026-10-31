@@ -1,5 +1,6 @@
 {
-	"count.is.{count}": "A contagem é {count}.",
-	"count.increment": "Incrementar",
-	"count.decrement": "Decrementar"
+	"page.parties": "Mesas",
+	"page.explore": "Explorar",
+	"page.create": "Criar",
+	"page.profile": "Perfil"
 }

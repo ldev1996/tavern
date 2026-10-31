@@ -1,5 +1,6 @@
 {
-	"count.is.{count}": "Count is {count}.",
-	"count.increment": "Increment",
-	"count.decrement": "Decrement"
+	"page.parties": "Parties",
+	"page.explore": "Explore",
+	"page.create": "Create",
+	"page.profile": "Profile"
 }

@@ -51,8 +51,7 @@ export default defineConfig(
 		},
 	},
 	{
-		files: ["**/*.svelte"],
-
+		files: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js"],
 		languageOptions: {
 			parserOptions: {
 				parser: tseslint.parser,
@@ -61,6 +60,13 @@ export default defineConfig(
 		rules: {
 			"prefer-const": "off",
 			"svelte/prefer-const": "error",
+		},
+	},
+	{
+		files: ["apps/web/src/lib/components/ui/**/*.{ts,tsx,svelte}"],
+		rules: {
+			"@typescript-eslint/no-explicit-any": "off",
+			"@typescript-eslint/no-unused-vars": "off",
 		},
 	},
 );
